@@ -1,0 +1,121 @@
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+body{
+    background-color: #D9AFD9;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo {
+    border-radius: 75%;
+    width: 300px;
+    display:block;
+    margin:auto
+    
+}
+
+
+#section2{
+    background-color: aqua;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+div{
+    background-color: blue;
+    width: 50%;
+   
+}
+
+#rose{
+    background-color: #441fb2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#rose h2{
+    color: aliceblue;
+  
+}
+#violet{
+    background-color: #3a033a;
+}
+.A{
+    border-radius: 80%;
+    
+}
+h4 {
+    color: aliceblue;
+    text-align: center;
+}
+
+h3{
+    color: aqua;
+}
+
+#section3{
+    background-color: blueviolet;
+}
+
+#section1{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;  
+}
+
+
+.slider-container {
+  /*  max-width: 800px;*/
+  width: 100%;
+    position: relative;
+    margin: auto;
+   height: 330px;
+  /* height: 800px;*/
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+
