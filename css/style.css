@@ -3,7 +3,7 @@ h1{
     color: aliceblue;
 }
 body{
-    background-color: #D9AFD9;
+    background-color: #F9137B;
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,32 +19,35 @@ body{
 
 
 #section2{
-    background-color: aqua;
+    background-color: #F9137B;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 2px solid green;
 }
 
 div{
-    background-color: blue;
+    background-color: green;
     width: 50%;
    
 }
 
 #rose{
-    background-color: #441fb2;
+    background-color: #ffced9;
     text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 #rose h2{
-    color: aliceblue;
+    color: #ffced9;
   
 }
 #violet{
-    background-color: #3a033a;
+    background-color: #ffced9;
+}
+#peche{
+    background-color: #ffced9;
 }
 .A{
     border-radius: 80%;
@@ -76,7 +79,7 @@ h3{
   width: 100%;
     position: relative;
     margin: auto;
-   height: 330px;
+   height: 350px;
   /* height: 800px;*/
     overflow: hidden;
 }
@@ -91,9 +94,9 @@ h3{
 .menu label {
     cursor: pointer;
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #ccc;
+    width: 13px;
+    height: 13px;
+    background: black;
     border-radius: 50px;
     margin: 0 0.2em 1em;
 }
@@ -119,3 +122,111 @@ h3{
     transition: left 0.65s ease-out;
 }
 
+.B{
+    text-align: center;
+    color: aquamarine;
+}
+
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+ 
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+ 
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+ 
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+ 
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+ 
+ /* Styles pour les conteneurs des flip boxes */
+.flip-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espace entre les flip boxes */
+}
+
+/* Styles pour chaque flip box */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Ce conteneur est nécessaire pour positionner les faces avant et arrière. */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Effectue un retournement horizontal lorsque vous passez la souris sur le conteneur de la boîte de retournement.*/
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Positionner les faces avant et arrière*/
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style de la face avant */
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style de la face arrière */
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+/* Mise en page réactive - lorsque la largeur de l'écran est inférieure à 600 px, les deux colonnes s'empilent l'une sur l'autre au lieu de se côtoyer. */
+@media screen and (max-width: 600px) {
+    .flip-box,.flip-box-back,.flip-box-container,.flip-box-front,.flip-box-inner.flip-box:hover input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
