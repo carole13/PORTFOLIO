@@ -1,4 +1,42 @@
+
 <!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  
+  <div class="navbar" id="myNavbar">
+      <a href="#accueil">Accueil</a>
+      <a href="#a-propos">À propos</a>
+      <a href="#services">Qualité</a>
+      <a href="#contact">Formulaire</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          &#9776; <!-- C'est le symbole du burger -->
+      </a>
+  </div>
+  
+  <script>
+      function myFunction() {
+          var x = document.getElementById("myNavbar");
+          if (x.className === "navbar") {
+              x.className += " responsive";
+          } else {
+              x.className = "navbar";
+          }
+      }
+  </script>
+</head>
+<body>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,15 +82,7 @@
 </section>
    <h2 classe="B">Pour etre une barbie il faut</h2>
 
-   <section id="section2">
-   <div class="A"><h4>Aimer les rose</h4></div>
-   <div class="A"><h4>Etre blonde</h4></div>
-   <div class="A"><h4>Toujours en robe</h4></div>
-   <div class="A"><h4>Voiture décapotable rose</h4></div>
-   <div class="A"><h4>Les pieds courbés</h4></div>
-   <div class="A"><h4>Avoir un KEN</h4></div>
-   </section> 
-
+ 
 <section id="section3">
 <h3>Pour être une barbie il faut:</h3>
 <div class="flip-box">
@@ -118,7 +148,56 @@
 
 </section>
 
-   
+</div>
+
+
+  </section>
+ <!-- Container pour centrer le formulaire -->
+ <div id="contact" class="container">
+  <!-- Formulaire commence ici -->
+  <form>
+      <!-- Champ pour le nom -->
+      <div class="form-group">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required>
+      </div>
+
+      <!-- Champ pour le prénom -->
+      <div class="form-group">
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
+      </div>
+
+      <!-- Champ pour le pays -->
+      <div class="form-group">
+          <label for="pays">Pays :</label>
+          <input type="text" id="pays" name="pays" required>
+      </div>
+
+      <!-- Zone de texte pour le message -->
+      <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <!-- Case à cocher pour l'acceptation des conditions -->
+      <div class="checkbox-group">
+          <label>
+              <input type="checkbox" id="agree" name="agree" required>
+              Je confirme avoir lu et accepté les conditions d'utilisation.
+          </label>
+      </div>
+
+      <!-- Bouton d'envoi -->
+      <button type="submit" class="submit-btn">Envoyer</button>
+  </form>
+  <!-- Formulaire se termine ici -->
+    </body>
+ 
+</footer>
+
+
+
 
     
 </body>

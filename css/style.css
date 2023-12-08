@@ -18,20 +18,15 @@ body{
 }
 
 
-#section2{
-    background-color: #F9137B;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    border: 2px solid green;
-}
 
-div{
-    background-color: green;
+
+
+/*div{
+    background-color: pink;
     width: 50%;
    
 }
-
+*/
 #rose{
     background-color: #ffced9;
     text-align: center;
@@ -132,10 +127,10 @@ h3{
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 100px; /* Remove this if you don't want the 3D effect */
   }
  
   /* This container is needed to position the front and back side */
@@ -230,3 +225,121 @@ h3{
       margin-top: 0;
     }
   }
+
+
+  /* CSS pour le formulaire */
+
+/* Styles pour le formulaire */
+
+
+
+    /* Styles pour le conteneur du formulaire */
+    .container {
+        max-width: 400px; /* Largeur maximale du formulaire */
+        margin: 0 auto; /* Centre le formulaire horizontalement */
+        background-color: #eedfdf;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 50px; /* Espacement du haut */
+      }
+      
+      /* Styles pour les groupes de formulaires (nom, prénom, pays, message) */
+      .form-group {
+        margin-bottom: 20px; /* Espacement entre les groupes de formulaires */
+      }
+      
+      /* Styles pour les libellés des champs de formulaire */
+      .form-group label {
+        display: block; /* Affiche le libellé sur une nouvelle ligne */
+        font-weight: bold;
+        margin-bottom: 5px; /* Espacement en bas du libellé */
+      }
+      
+      /* Styles pour les champs de texte et la zone de texte */
+      .form-group input[type="text"],
+      .form-group textarea {
+        width: 100%; /* Remplit la largeur du conteneur parent */
+        padding: 10px; /* Remplissage intérieur des champs */
+        font-size: 16px; /* Taille de la police */
+        border: 1px solid #090404; /* Bordure grise */
+        border-radius: 5px; /* Coins arrondis */
+      }
+      
+      /* Styles spécifiques pour la zone de texte */
+      .form-group textarea {
+        height: 150px; /* Hauteur fixe pour la zone de texte */
+      }
+      
+      /* Styles pour le groupe de case à cocher */
+      .checkbox-group {
+        margin-bottom: 20px; /* Espacement en bas du groupe de case à cocher */
+      }
+      
+      /* Styles pour la case à cocher et son libellé */
+      .checkbox-group label {
+        display: block; /* Affiche le libellé sur une nouvelle ligne */
+        margin-bottom: 10px; /* Espacement en bas du libellé */
+      }
+      
+      .checkbox-group input[type="checkbox"] {
+        margin-right: 10px; /* Espacement à droite de la caseà cocher */
+      }
+
+
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #7d0b0b;
+    }
+    
+    .navbar {
+        background-color: #333;
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+    
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        display: inline-block;
+    }
+    
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .navbar .icon {
+        display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child) {
+            display: none;
+        }
+        .navbar a.icon {
+            float: right;
+            display: block;
+        }
+    }
+    
+    .navbar.responsive {
+        position: relative;
+    }
+    
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .navbar.responsive a {
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
