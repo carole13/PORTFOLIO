@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+
+  <div class="navbar" id="myNavbar">
+    <a href="#accueil">Accueil</a>
+    <a href="#a-propos">À propos</a>
+    <a href="#services">Qualité</a>
+    <a href="#contact">Formulaire</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      &#9776; <!-- C'est le symbole du burger -->
+    </a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+  </head>
+
+  <body>
+    <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Portfolio</title>
+    </head>
+
+    <body>
+      <header>
+        <h1>Barbie</h1>
+        <img id="photo" src="image/Image 20-09-2023 à 16.51.jpg" alt="image de profil">
+        <br>
+
+
+      </header>
+      <section>
+
+
+        <div class="slider-container">
+          <div class="menu">
+            <label for="slide-dot-1"></label>
+            <label for="slide-dot-2"></label>
+            <label for="slide-dot-3"></label>
+          </div>
+
+          <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+          <div class="slide-img" id="rose">
+            <h2> <br> Barbie est une poupée mannequin de 29 cm commercialisée depuis 1959 par Mattel, <p></p>pune
+              société américaine de jouets et de jeux.
+              Elle deviendra un personnage clé d'énormément de film.</p>
+            </h2>
+          </div>
+
+
+          <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+          <div class="slide-img" id="violet">
+            <h2>De nombreux films ont été crée au fil du temps sur cette poupée.<p></p> des films qui ont été fortement apréciés</h2>
+          </div>
+
+          <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+          <div class="slide-img" id="peche">
+            <h2>Un film barbie est sortie récemment pour montrer un autre coté de la vie de Barbie <p></p>,un film contreverser. Votre avis?</h2>
+          </div>
+          </br>
+        </div>
+
+      </section>
+
+      <div class="B">
+        <h2>Pour etre une barbie il faut:</h2>
+      </div>
+
+
+
+      </div>
+      <p>         </p>
+      <p>        </p>
+      <div class="flip-box-container">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2> Un dressing rose</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2> C'est très important. Vous avez déjà vu une barbie d'une autre couleur</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Etre blonde</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2> A vos décolorations!!!!</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Voiture rose</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Barbie est une As du volant</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-box-container">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2> Avoir des talons</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2> Faut pas avoir peur d'avoir mal au pieds!!!</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2> Un beau sourire</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Les dents blanches qu'on voit depuis un autre continent</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2> Avoir un KENNN</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2> L'INDISPENSABLE POUR BARBIE</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </section>
+      <!-- Container pour centrer le formulaire -->
+      <div id="contact" class="container">
+        <!-- Formulaire commence ici -->
+        <form>
+          <h3>Critique/Avis sur le dernier film barbie</h3>
+          <!-- Champ pour le nom -->
+          <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+
+          <!-- Champ pour le prénom -->
+          <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+          </div>
+
+          <!-- Champ pour le pays -->
+          <div class="form-group">
+            <label for="pays">Pays :</label>
+            <input type="text" id="pays" name="pays" required>
+          </div>
+
+          <!-- Zone de texte pour le message -->
+          <div class="form-group">
+            <label for="message">Message/Avis :</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <!-- Case à cocher pour l'acceptation des conditions -->
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" id="agree" name="agree" required>
+              Je confirme avoir vu le dernier film Barbie.
+            </label>
+          </div>
+
+          <!-- Bouton d'envoi -->
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+        <!-- Formulaire se termine ici -->
+
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+    <footer>
+      <div class="footer-content">
+        <a href="https://www.instagram.com/barbie/"><img src="image/insta.jpg.webp" alt="Logo insta"></a>
+        <p>Notre page Instagram</p>
+      </div>
+    </footer>
+    </html>
